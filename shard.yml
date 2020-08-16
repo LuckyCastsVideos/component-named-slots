@@ -1,12 +1,12 @@
-name: my_app
+name: component_named_slots
 version: 0.1.0
 
 authors:
   - your-name-here <your-email-here>
 
 targets:
-  my_app:
-    main: src/my_app.cr
+  component_named_slots:
+    main: src/component_named_slots.cr
 
 crystal: 0.35.0
 

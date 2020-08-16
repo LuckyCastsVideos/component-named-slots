@@ -1,4 +1,4 @@
-database_name = "my_app_#{Lucky::Env.name}"
+database_name = "component_named_slots_#{Lucky::Env.name}"
 
 AppDatabase.configure do |settings|
   if Lucky::Env.production?
