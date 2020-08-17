@@ -1,6 +1,6 @@
 class Shared::Card < BaseComponent
   needs title : String
-  needs body : String
+  needs body : Proc(Void)
 
   def render
     div class: "bg-white overflow-hidden shadow rounded-lg" do
@@ -9,7 +9,7 @@ class Shared::Card < BaseComponent
       end
 
       div class: "px-4 py-5 sm:p-6" do
-        h3 body
+        body.call
       end
     end
   end

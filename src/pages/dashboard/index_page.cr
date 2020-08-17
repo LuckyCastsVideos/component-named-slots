@@ -6,7 +6,7 @@ class Dashboard::IndexPage < MainLayout
   def content
     mount Shared::Card,
       title: "Dashboard",
-      body: "This is just a string, but we want more!"
+      body: ->{ advanced_content }
   end
 
   private def advanced_content

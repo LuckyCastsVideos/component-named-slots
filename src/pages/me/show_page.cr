@@ -6,6 +6,6 @@ class Me::ShowPage < MainLayout
   def content
     mount Shared::Card,
       title: "Your profile",
-      body: "Email: #{current_user.email}"
+      body: ->{ h3 "Email: #{current_user.email}" }
   end
 end
